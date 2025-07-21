@@ -34,7 +34,7 @@ RUN set -xe && \
     cd toml11 && \
     cmake -DCMAKE_CXX_STANDARD=11 . && \
     make install -j $THREADS && \
-    cd .. && \
+    cd ..
 
 RUN git clone https://github.com/zqcccc/subconverter --depth=1 && \
     cd subconverter && \
